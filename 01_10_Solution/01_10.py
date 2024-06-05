@@ -38,7 +38,7 @@ while True:
         richtig+=1
     else:
         print("Antwort falsch")
-        print("Korrekt ist Antwort", index)
+        print("Korrekt ist Antwort",index)
     if input("Weiterer Test (Y/N)?\n").upper()=="N":
         break
 print("Die Anzahl der Versuche:",anzahlVersuche,"\nAnzahl der richtigen Versuche:",richtig,"\n","*"*50)

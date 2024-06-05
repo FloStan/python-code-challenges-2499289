@@ -33,14 +33,18 @@ class Application(Frame):
             self.b.config(text= str(bin(d)))
             self.o.config(text= str(oct(d)))
             self.h.config(text=str(hex(d)))
+            self.d.configure(bg="white")
         except:
-            pass
+            self.d.configure(bg="red")
             
         
 
 root=Tk()
+root.title('MyApp')
+root.iconphoto(False, PhotoImage(file='C:\VisuSeiten\PLC Testumgebung\images\\139453527_image2.PNG'))
 app=Application(master=root)
 app.mainloop()
+
 
 
 
