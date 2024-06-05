@@ -10,4 +10,8 @@ while i < 255:
     if treffer > 0:
         zeichen[chr(i)] = treffer
     i += 1
-print(zeichen)
+print(zeichen.items())
+sortedlist = sorted(zeichen.items(), key=lambda x:x[1])
+sortdict = dict(sortedlist)
+for key, value in sortdict.items():
+   print(f'Zeichen: {key}, Anzahl: {value}')
