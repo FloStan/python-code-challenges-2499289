@@ -1,6 +1,6 @@
 import kfzdaten 
 while True:
-    kennzeichen = input("Eingabe KFZ-Kennzeichen\n");
+    kennzeichen = input("Eingabe KFZ-Kennzeichen\n")
     for i in kfzdaten.kfz:
         if i["kennzeichen"].find(kennzeichen.upper())==0:
            print(i["kennzeichen"],i["gebiet"],sep=":")
